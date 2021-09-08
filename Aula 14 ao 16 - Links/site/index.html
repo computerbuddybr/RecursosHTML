@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Aula 14 - Links</title>
+    <meta name="description"
+          content="Aqui vai a descrição do seu site ou página para o Google poder ver e colocar no sumário no resultado das buscas.">
+    <meta name="keywords" content="Aqui vão as palavras chaves separadas por vírgula">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+    <style>
+        .div_anterior {
+            height: 800px;
+        }
+
+        #link_interno {
+            height: 800px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Aula 14 - Links</h1>
+
+    <h2>Tag a</h2>
+    <ul>
+        <li>Este é um <a href="mesma_pasta.html" target="_blank">link</a> interno para um arquivo nesta mesma pasta</li>
+        <li>Este é um <a href="arquivos/pasta_diferente.html"
+                         alt="Este link leva a uma página deste mesmo site">link</a> interno para um arquivo em outra
+            pasta do mesmo site
+        </li>
+        <li>Este é um <a role="link" href="http://adrianacerdeira.info/index.php?page=stock" target="_self">link</a>
+            externo
+        </li>
+        <li>Este é um <a href="#link_interno">link</a> é chamado de âncora porque leva ao mesmo documento</li>
+        <li>Este <a href="mailto:adriana.cerdeira@outlook.com"> link</a> vai para um e-mail</li>
+        <li> Este <a href="tel:982892415">link</a> é de um telefone</li>
+
+        <li><a download href="htmlcheatsheet.pdf" target="_blank">Este é um link para pdf</a></li>
+        <li><a download href="londres.jpg" target="_blank">Este é um link para uma imagem</a></li>
+        <li><a href="exemplo.docx" target="_blank">Este é um link para um Documento Word.</a></li>
+    </ul>
+
+
+    <h2>Referência</h2>
+    <a href="https://developer.mozilla.org/pt-PT/docs/Web/HTML/Tipos_de_hiperligacao" target="_blank">Tipos de links
+        para o atributo rel: https://developer.mozilla.org/pt-PT/docs/Web/HTML/Tipos_de_hiperligacao</a>
+
+    <div class="div_anterior"></div>
+    <div id="link_interno"></div>
+
+</main>
+</body>
+</html>
