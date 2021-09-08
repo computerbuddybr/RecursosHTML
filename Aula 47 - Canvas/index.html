@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Aula 49 - Canvas</title>
+    <meta name="description"
+          content="Aqui vai a descrição do seu site ou página para o Google poder ver e colocar no sumário no resultado das buscas.">
+    <meta name="keywords" content="Aqui vão as palavras chaves separadas por vírgula">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+    <style type="text/css">
+        canvas {
+            border: 2px solid purple;
+        }
+    </style>
+
+    <script>
+        function pintarCanvas(x, y, l, a, cor) {
+            var canvas = document.getElementById('canvas');
+            var conteudo = canvas.getContext('2d');
+            conteudo.fillStyle = cor;
+            conteudo.fillRect(x, y, l, a);
+        }
+    </script>
+</head>
+<body>
+
+<main>
+    <h1>Aula 49 - Canvas</h1>
+
+    <canvas id="canvas" width="300" height="300">
+        Um texto alternativo por se o navegador não suportar o Canvas.
+    </canvas>
+    <br>
+    <button onclick="pintarCanvas(50,50,200,200, 'pink')">Clique para fazer um quadrado rosa no centro</button>
+    <br>
+    <button onclick="pintarCanvas(0,0,300,300, 'cyan')">Clique para fazer pintar todo o quadrado de roxo</button>
+    <br>
+    <button onclick="pintarCanvas(0,0,300,300, 'white')">Clique para fazer pintar todo o quadrado de branco</button>
+
+</main>
+
+</body>
+</html>

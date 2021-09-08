@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Aula 35- Tabelas</title>
+    <meta name="description"
+          content="Aqui vai a descrição do seu site ou página para o Google poder ver e colocar no sumário no resultado das buscas.">
+    <meta name="keywords" content="Aqui vão as palavras chaves separadas por vírgula">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+    <style type="text/css">
+
+        table {
+            width: 50%;
+            border: 2px solid #6e09e2;
+        }
+
+        tr {
+            border: 2px solid #d9009d;
+
+        }
+
+        td {
+            border: 2px solid green;
+        }
+
+        table.full {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+
+</header>
+<main>
+    <h1>Aula 34- Tabelas</h1>
+    <h2>Tabela simples</h2>
+    <table>
+        <tr>
+            <td>País</td>
+            <td>Idioma</td>
+            <td>Moeda</td>
+        </tr>
+        <tr>
+            <td>Brasil</td>
+            <td>Português</td>
+            <td>Real</td>
+        </tr>
+        <tr>
+            <td>EUA</td>
+            <td>Inglês</td>
+            <td>Dólar</td>
+        </tr>
+        <tr>
+            <td>Inglaterra</td>
+            <td>Inglês</td>
+            <td>Libra</td>
+        </tr>
+
+    </table>
+    <h2>Tabela com número de células diferentes</h2>
+    <table>
+        <tr>
+            <td>País</td>
+            <td>Idioma</td>
+            <td>Moeda</td>
+        </tr>
+        <tr>
+            <td>Brasil</td>
+            <td>Real</td>
+        </tr>
+        <tr>
+            <td>EUA</td>
+            <td>Inglês</td>
+            <td>Dólar</td>
+        </tr>
+        <tr>
+            <td>Inglaterra</td>
+            <td>Inglês</td>
+        </tr>
+        <tr>
+            <td>EUA</td>
+            <td>Inglês</td>
+            <td>Dólar</td>
+            <td>4ª célula</td>
+        </tr>
+    </table>
+    <h2>Tabela com tabela dentro</h2>
+
+    <table>
+        <tr>
+            <td>
+                Países do Mundo
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="full">
+                    <tr>
+                        <td>País</td>
+                        <td>Idioma</td>
+                        <td>Moeda</td>
+                    </tr>
+                    <tr>
+                        <td>Brasil</td>
+                        <td>Português</td>
+                        <td>Real</td>
+                    </tr>
+                    <tr>
+                        <td>EUA</td>
+                        <td>Inglês</td>
+                        <td>Dólar</td>
+                    </tr>
+                    <tr>
+                        <td>Inglaterra</td>
+                        <td>Inglês</td>
+                        <td>Libra</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table>
+</main>
+<footer>
+</footer>
+</body>
+</html>

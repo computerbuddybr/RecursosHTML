@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Aula 22 - Nav</title>
+    <meta name="description"
+          content="Aqui vai a descrição do seu site ou página para o Google poder ver e colocar no sumário no resultado das buscas.">
+    <meta name="keywords" content="Aqui vão as palavras chaves separadas por vírgula">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+    <style>
+        nav {
+            background-color: lightblue;
+        }
+
+        .pink {
+            background-color: lightpink;
+        }
+
+        ul li {
+            display: inline-block;
+            list-style-type: none;
+            margin: 2em;
+
+        }
+
+        ul {
+            height: 4em;
+        }
+
+        main {
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+            height: 1000px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <h2>Menu de acessibilidade</h2>
+        <ul>
+            <li>
+                <a href="#mainMenu">Pular para menu principal</a>
+            </li>
+            <li>
+                <a href="#mainContent">Pular para conteúdo principal</a>
+            </li>
+
+        </ul>
+    </nav>
+    <nav id="mainMenu">
+
+        <ul class="mainMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+        </ul>
+
+    </nav>
+</header>
+<main id="mainContent">
+    <h1>Aula 22 - Serviços</h1>
+    <nav class="pink">
+        <ul>
+            <li>
+                <a href="#">Aulas particulares</a>
+            </li>
+            <li>
+                <a href="#">Aulas online</a>
+            </li>
+            <li>
+                <a href="#">Criação de site</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <p>Aqui temos o conteúdo principal.</p>
+
+</main>
+<footer>
+</footer>
+</body>
+</html>

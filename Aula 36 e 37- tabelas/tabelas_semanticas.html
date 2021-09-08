@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Aula 36- Tabelas Semânticas</title>
+    <meta name="description"
+          content="Aqui vai a descrição do seu site ou página para o Google poder ver e colocar no sumário no resultado das buscas.">
+    <meta name="keywords" content="Aqui vão as palavras chaves separadas por vírgula">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+    <style type="text/css">
+
+        table {
+            width: 50%;
+            border: 2px solid purple;
+            caption-side: bottom;
+        }
+
+        th {
+            border: 2px solid green;
+        }
+
+        td {
+            border: 2px solid pink;
+        }
+
+        .footerandHeader {
+            background-color: lightgrey;
+        }
+
+        .blueBG {
+            background-color: lightblue;
+        }
+
+        .pinkBG {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<header>
+
+</header>
+<main>
+    <h1>Aula 36- Tabelas Semânticas</h1>
+    <h2>Tabela simples</h2>
+    <table>
+        <caption>Países do Mundo</caption>
+        <thead>
+        <tr>
+            <td>País</td>
+            <td>Idioma</td>
+            <td>Moeda</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Brasil</td>
+            <td>Português</td>
+            <td>Real</td>
+        </tr>
+        <tr>
+            <td>EUA</td>
+            <td>Inglês</td>
+            <td>Dólar</td>
+        </tr>
+        <tr>
+            <td>Inglaterra</td>
+            <td>Inglês</td>
+            <td>Libra</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>País</td>
+            <td>Idioma</td>
+            <td>Moeda</td>
+        </tr>
+        </tfoot>
+
+    </table>
+
+
+    <h2>th</h2>
+    <table>
+        <caption>Planos</caption>
+        <colgroup>
+            <col>
+            <col class="blueBG">
+            <col>
+            <col class="blueBG">
+        </colgroup>
+        <thead>
+        <tr>
+            <td></td>
+            <th>Simples</th>
+            <th>Pro</th>
+            <th>Premium</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <th>Dados</th>
+            <td>2GB</td>
+            <td>4GB</td>
+            <td>Ilimitado</td>
+        </tr>
+        <tr>
+            <th>Benefícios</th>
+            <td>WhatsApp</td>
+            <td>WhatsApp e Deezer</td>
+            <td>WhatsApp, Deezer, Netflix</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <th>Valor</th>
+            <td>R$ 50,00</td>
+            <td>R$ 100,00</td>
+            <td>R$ 200,00</td>
+        </tr>
+        </tfoot>
+    </table>
+
+</main>
+<footer>
+</footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Aula 30 - figure, figcaption, picture</title>
+    <meta name="description"
+          content="Aqui vai a descrição do seu site ou página para o Google poder ver e colocar no sumário no resultado das buscas.">
+    <meta name="keywords" content="Aqui vão as palavras chaves separadas por vírgula">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+    <style>
+        img {
+            width: 100%;
+        }
+
+        figure {
+            border: 2px solid purple;
+
+        }
+
+        figcaption {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+
+</header>
+<main>
+    <h1>Aula 30 - figure, figcaption, picture</h1>
+    <h2>Figure</h2>
+    <figure>
+        <img src="timeline.png" title="Cronograma">
+
+    </figure>
+
+
+    <h2>Figcaption</h2>
+
+    <figure>
+        <img src="eletro.jpg" alt="Eletroencefalograma">
+        <figcaption>
+            Patient's electroencephalogram signal while having an epileptic seizure.
+        </figcaption>
+    </figure>
+
+    <h2>Picture</h2>
+
+
+    <picture>
+        <source srcset="opcoes/large.jpg" media="(min-width: 1100px)">
+        <source srcset="opcoes/medium.jpg" media="(min-width: 600px)">
+
+        <img src="opcoes/small.jpg" alt="Rua">
+
+    </picture>
+
+    <img src="opcoes/small.jpg" srcset="opcoes/large.jpg 1100w, opcoes/medium.jpg 600w " alt="Rua">
+</main>
+<footer>
+</footer>
+</body>
+</html>
